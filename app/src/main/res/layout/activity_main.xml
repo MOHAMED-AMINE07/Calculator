@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="5dp"
+    android:paddingStart="10dp"
+    tools:ignore="RtlSymmetry">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/darck"
+                android:onClick="del"
+                android:text="←"
+                android:textColor="@color/whiteGry"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sup"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/darck"
+                android:onClick="clsa"
+                android:text="C"
+                android:textColor="@color/whiteGry"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/darck"
+                android:onClick="mod"
+                android:text="%"
+                android:textColor="@color/whiteGry"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/div"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/coolBleu"
+                android:onClick="divide"
+                android:text="÷"
+                android:textColor="@color/whiteGry"
+                android:textSize="32dp"
+                tools:ignore="TextContrastCheck" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+
+                android:id="@+id/btn7"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/whiteGry"
+                android:onClick="nbrEvent"
+                android:text="7"
+                android:textColor="@color/darck"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/whiteGry"
+                android:gravity="center"
+                android:onClick="nbrEvent"
+                android:text="8"
+                android:textColor="@color/darck"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/whiteGry"
+                android:onClick="nbrEvent"
+                android:text="9"
+                android:textColor="@color/darck"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/mul"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/coolBleu"
+                android:gravity="center"
+                android:onClick="multiply"
+                android:text="×"
+                android:textColor="@color/whiteGry"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/whiteGry"
+                android:onClick="nbrEvent"
+                android:text="4"
+                android:textColor="@color/darck"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/whiteGry"
+                android:onClick="nbrEvent"
+                android:text="5"
+                android:textColor="@color/darck"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/whiteGry"
+                android:onClick="nbrEvent"
+                android:text="6"
+                android:textColor="@color/darck"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/mon"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/coolBleu"
+                android:onClick="minus"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="379dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/whiteGry"
+                android:onClick="nbrEvent"
+                android:text="1"
+                android:textColor="@color/darck"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/whiteGry"
+                android:onClick="nbrEvent"
+                android:text="2"
+                android:textColor="@color/darck"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/whiteGry"
+                android:onClick="nbrEvent"
+                android:text="3"
+                android:textColor="@color/darck"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/coolBleu"
+                android:onClick="plus"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/pion"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5sp"
+                android:layout_weight="0"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/whiteGry"
+                android:onClick="nbrEvent"
+                android:text="."
+                android:textColor="@color/darck"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/whiteGry"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="nbrEvent"
+                android:text="0"
+                android:textColor="@color/darck"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/equals"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="4"
+                android:background="@drawable/raduis_btn"
+                android:backgroundTint="@color/coolBleu"
+                android:onClick="equal"
+                android:text="="
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="end"
+        android:text="0"
+        android:textColor="@color/darck"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/coolBleu"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="4dp"
+        android:background="#B1B1B1"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.579" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
